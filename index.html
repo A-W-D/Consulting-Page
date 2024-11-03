@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project Management Consulting</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div dir="ltr" class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <small class="me-3 text-white-50"><a
+                            href="https://www.google.com/maps/dir/29.9553655,30.9111471//@29.9554335,30.8699476,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D"><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"></i></a>6th of October City (2),
+                        Giza</small>
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fas fa-envelope me-2 text-secondary"></i></a>info@IEAtd.com</small>
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex">
+                    <small>Note : Project Management Consulting </small>
+                </div>
+                <div class="top-link">
+                    <a href="https://www.facebook.com/IEATD"
+                        class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://www.instagram.com/ieatd2/"
+                        class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.linkedin.com/in/ieatd/"
+                        class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div dir="ltr" class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0 text-center">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-white fw-bold d-block">
+                        IEAtd <span class="text-secondary">Academy</span>
+                    </h1>
+                </a>
+                <!-- <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <!-- <a href="index.html" class="nav-item nav-link active text-secondary">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <a href="project.html" class="nav-item nav-link">Projects</a> -->
+                        <div class="nav-item dropdown">
+                            <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu rounded">
+                                    <a href="blog.html" class="dropdown-item">Our Blog</a>
+                                    <a href="team.html" class="dropdown-item">Our Team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div> -->
+                        </div>
+                        <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="tel:+201110233325" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-white fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4 border-end">
+                        <span class="text-white-50">Have any questions?</span>
+                        <span class="text-secondary">Call: +20 1110233325</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <img src="img/1 (1).jpg" class="img-fluid" alt="Project Management Solutions" />
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h6 class="text-secondary h4 animated fadeInUp">
+                                إدارة المشاريع التحويلية
+                            </h6>
+                            <h1 class="text-white display-1 mb-4 animated fadeInRight">
+                                تمكين النجاح من خلال استشارات النخبة
+                            </h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                اكتشف استراتيجيات لدفع عجلة نجاح المشروع النجاح ورفع مستوى
+                                تأثير أعمالك من خلال خدمات استشارية مصممة خصيصاً لك.
+                            </p>
+                            <a href="#about" class="me-2">
+                                <button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">
+                                    تعلّم المزيد
+                                </button>
+                            </a>
+                            <a href="#contact" class="ms-2">
+                                <button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">
+                                    تواصل معنا
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <img src="img/1 (8).jpg" class="img-fluid" alt="Customized Consulting Solutions" />
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h6 class="text-secondary h4 animated fadeInUp">
+                                حلول مصممة خصيصاً لتلبية احتياجاتك
+                            </h6>
+                            <h1 class="text-white display-1 mb-4 animated fadeInLeft">
+                                تحقيق التميز في كل مشروع
+                            </h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                خبرتنا في إدارة المشاريع تضمن توافق كل مشروع مع أهدافك
+                                الاستراتيجية وتحقيق نجاح قابل للقياس.
+                            </p>
+                            <a href="#consult" class="ms-2">
+                                <button type="button"
+                                    class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">
+                                    استشر الآن
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Fact Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Stat 1: Project Success Rate -->
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value" data-target="99">
+                            0
+                        </h1>
+                        <h5 class="text-white mt-1">المشاريع المنجزة بنجاح</h5>
+                    </div>
+                </div>
+
+                <!-- Stat 2: Client Satisfaction Rate -->
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value" data-target="98">
+                            0
+                        </h1>
+                        <h5 class="text-white mt-1">معدل رضا العملاء</h5>
+                    </div>
+                </div>
+
+                <!-- Stat 3: Businesses Supported -->
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value" data-target="120">
+                            0
+                        </h1>
+                        <h5 class="text-white mt-1">
+                            الشركات المدعومة في جميع أنحاء العالم
+                        </h5>
+                    </div>
+                </div>
+
+                <!-- Stat 4: Industry Expertise -->
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                    <div class="d-flex counter">
+                        <h1 class="me-3 text-primary counter-value" data-target="10">
+                            0
+                        </h1>
+                        <h5 class="text-white mt-1">
+                            سنوات من الخبرة في استشارات المشاريع
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fact End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 my-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn text-center" data-wow-delay=".3s">
+                    <div class="h-100 position-relative d-flex justify-content-center align-items-center">
+                        <!-- Video Element Instead of Image -->
+                        <video class="w-75 rounded mx-auto" style="margin-bottom: 25%" muted loop controls>
+                            <source src="./img/WhatsApp Video 2024-11-03 at 01.28.51_d4edf29b.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <!-- Section Header -->
+                    <h5 class="text-primary">About Us</h5>
+
+                    <!-- Main Title: Summarizes the Academy's Focus -->
+                    <h1 class="mb-4">
+                        نبذة عن شركة IEAtd والتزامنا بالتميز في استشارات إدارة المشاريع
+                    </h1>
+
+                    <!-- First Paragraph: Mission Statement and Focus Areas -->
+                    <p>
+                        في أكاديمية النخبة الدولية للتدريب والتطوير (IEAtd)، نحن ملتزمون
+                        بما يلي تمكين الشركات والأفراد بالمهارات والاستراتيجيات التي
+                        يحتاجون إليها للتفوق في إدارة المشاريع. تركز خدماتنا الاستشارية
+                        الخبيرة على الاستفادة من تقنيات التسويق و تقنيات الإدارة المبتكرة
+                        لضمان نجاح نتائج المشاريع.
+                    </p>
+
+                    <!-- Second Paragraph: Experience and Unique Approach -->
+                    <p class="mb-4">
+                        مع سنوات من الخبرة في هذا المجال، تعتبر شركة IEAtd شريكًا موثوقًا
+                        به لـ للمنظمات التي تهدف إلى تحسين أداء مشاريعها. التزامنا بالتميز
+                        و يمكِّننا نهجنا المخصص من تلبية الاحتياجات الفريدة لكل عميل، مما
+                        يضمن أن يكون مجهزة تجهيزًا جيدًا لمواجهة تحديات مشهد الأعمال
+                        الديناميكي.
+                    </p>
+
+                    <!-- Call-to-Action Button: Directs to Further Details on IEAtd Services -->
+                    <a href="#details" class="btn btn-secondary rounded-pill px-5 py-3 text-white">المزيد
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Project Start -->
+    <div class="container-fluid project py-5 mb-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px">
+                <h5 class="text-primary">مشاريعنا</h5>
+                <h1>مشاريعنا الاستشارية المنجزة مؤخراً</h1>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-5">
+                <!-- Project 1: Marketing Strategy Development -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Marketing Strategy Development" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">تطوير استراتيجية التسويق</h4>
+                                    <p class="m-0 text-white">
+                                        استراتيجية النمو المخصصة لمشاركة العملاء
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Project Management Training Program -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Project Management Training Program" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">التدريب على إدارة المشاريع</h4>
+                                    <p class="m-0 text-white">التدريب الشامل للقيادة الفعالة</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Digital Transformation Consulting -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Digital Transformation Consulting" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">التحوّل الرقمي</h4>
+                                    <p class="m-0 text-white">
+                                        إرشادات حول اعتماد الحلول الرقمية
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Customer Relationship Management -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Customer Relationship Management" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">إدارة علاقات العملاء</h4>
+                                    <p class="m-0 text-white">
+                                        حلول إدارة علاقات العملاء لتعزيز مشاركة العملاء
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Data Analytics and Insights -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Data Analytics and Insights" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">تحليلات البيانات والرؤى</h4>
+                                    <p class="m-0 text-white">
+                                        تحويل البيانات إلى رؤى تجارية قابلة للتنفيذ
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Branding and Digital Marketing Strategy -->
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/1 (4).jpg" class="img-fluid w-100 rounded"
+                                alt="Branding and Digital Marketing Strategy" />
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">العلامة التجارية والتسويق</h4>
+                                    <p class="m-0 text-white">
+                                        العلامة التجارية الاستراتيجية للتواجد في السوق
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial py-5 mb-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px">
+                <h5 class="text-primary">شهاداتنا</h5>
+                <h1>ما يقوله عملاؤنا</h1>
+            </div>
+
+            <!-- Testimonial Carousel -->
+            <div dir="ltr" class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item border p-4 text-center">
+                    <!-- Centered Certificate Image -->
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="img/3 (1).jpg" alt="Certificate 1" class="img-fluid rounded"
+                            style="max-width: 200px" />
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ms-4 text-center">
+                            <h4 class="text-secondary">Moayed Al-Fatih</h4>
+                            <p class="m-0 pb-3">Marketing Director</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top mt-4 pt-3">
+                        <p class="mb-0">
+                            ”لقد غيرت شركة IEAtd نهجنا في إدارة المشاريع. فقد ساعدت
+                            استراتيجياتهم المبتكرة في تبسيط عملياتنا، مما أدى إلى زيادة
+                            الإنتاجية بنسبة 30%. يتفهم فريقهم حقًا تحديات الأعمال الحديثة.“
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item border p-4 text-center">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="img/3 (2).jpg" alt="Certificate 2" class="img-fluid rounded"
+                            style="max-width: 200px" />
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ms-4 text-center">
+                            <h4 class="text-secondary">Zainab Jafar</h4>
+                            <p class="m-0 pb-3">Project Manager</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top mt-4 pt-3">
+                        <p class="mb-0">
+                            ”لقد منح البرنامج التدريبي الذي قدمته شركة IEAtd فريقنا المهارات
+                            اللازمة للتعامل مع المشاريع المعقدة. إن الأمثلة الواقعية والنهج
+                            العملي جعل التدريب لا يقدر بثمن.“
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item border p-4 text-center">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="img/3 (3).jpg" alt="Certificate 3" class="img-fluid rounded"
+                            style="max-width: 200px" />
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ms-4 text-center">
+                            <h4 class="text-secondary">Fawziya Mohamed</h4>
+                            <p class="m-0 pb-3">CEO, Tech Solutions</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top mt-4 pt-3">
+                        <p class="mb-0">
+                            ”كانت الخبرة الاستشارية لشركة IEAtd بمثابة تغيير لقواعد اللعبة
+                            في مشروعنا للتحول الرقمي في مشروعنا للتحول الرقمي. لقد قدموا رؤى
+                            وحلولًا مصممة خصيصًا لتلبية احتياجاتنا وتحدياتنا الخاصة.
+                            والتحديات الخاصة بنا.“
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-item border p-4 text-center">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="img/3 (4).jpg" alt="Certificate 4" class="img-fluid rounded"
+                            style="max-width: 200px" />
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div class="ms-4 text-center">
+                            <h4 class="text-secondary">Widad Ahmed</h4>
+                            <p class="m-0 pb-3">HR Manager</p>
+                            <div class="d-flex justify-content-center">
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                                <i class="fas fa-star me-1 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top mt-4 pt-3">
+                        <p class="mb-0">
+                            ”لقد كان العمل مع شركة IEAtd تجربة رائعة. فقد قدموا لنا إرشادات
+                            لا تقدر بثمن بشأن تطوير إطار عمل إدارة المشاريع لدينا، مما
+                            ساعدنا على تحقيق التنسيق السلس بين الأقسام.“
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5 mb-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px">
+                <h5 class="text-primary">تواصل معنا</h5>
+                <h1 class="mb-3">تواصل معنا للحصول على استشارة مهنية</h1>
+                <p class="mb-2">
+                    هل لديك أسئلة حول خدماتنا الاستشارية؟ تواصل معنا لمناقشة كيف يمكننا
+                    المساعدة في الارتقاء بمشاريعك. فريقنا هنا لدعمك في كل مرحلة من مراحل
+                    رحلتك.
+                </p>
+            </div>
+
+            <!-- Contact Details and Form -->
+            <div class="contact-detail position-relative p-5">
+                <!-- Contact Information -->
+                <div class="row g-5 mb-5 justify-content-center">
+                    <!-- Address -->
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">عنوان المكتب</h4>
+                                <p class="m-0">6th of October City (2), Giza</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px">
+                                <i class="fa fa-phone text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">رقم الهاتف</h4>
+                                <p class="m-0">
+                                    <a class="text-dark" href="tel:+0123456789">+20 1110233325</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                        <div class="d-flex bg-light p-3 rounded">
+                            <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                style="width: 64px; height: 64px">
+                                <i class="fa fa-envelope text-white"></i>
+                            </div>
+                            <div class="ms-3">
+                                <h4 class="text-primary">Email Address</h4>
+                                <p class="m-0">
+                                    <a class="text-dark" href="mailto:info@ieatd.com">info@ieatd.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form and Map -->
+                <div class="row g-5">
+                    <!-- Google Map Embed -->
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                        <div class="p-5 h-100 rounded contact-map">
+                            <iframe class="rounded w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.4710403339755!2d-73.82241512404069!3d40.685622471397615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26749046ee14f%3A0xea672968476d962c!2s123rd%20St%2C%20Queens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1686493221834!5m2!1sen!2sbd"
+                                style="border: 0" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                        <div class="p-5 rounded contact-form bg-light">
+                            <form action="contact.php" method="POST">
+                                <div class="mb-4">
+                                    <input type="text" name="name" class="form-control border-0 py-3"
+                                        placeholder="Your Name" required />
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" name="email" class="form-control border-0 py-3"
+                                        placeholder="Your Email" required />
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" name="subject" class="form-control border-0 py-3"
+                                        placeholder="Subject" required />
+                                </div>
+                                <div class="mb-4">
+                                    <textarea name="message" class="w-100 form-control border-0 py-3" rows="6"
+                                        placeholder="Message" required></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button class="btn btn-primary text-white py-3 px-5" type="submit">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <!-- Logo & Description -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="text-white fw-bold">
+                            IEAtd<span class="text-secondary"> Academy</span>
+                        </h1>
+                    </a>
+                    <p class="mt-4 text-light">
+                        Empowering professionals through specialized training and
+                        consultancy to navigate modern project management challenges.
+                    </p>
+                    <!-- Social Media Links -->
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/IEATD"
+                            class="btn btn-light btn-square rounded-circle me-2 social-link"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ieatd2/"
+                            class="btn btn-light btn-square rounded-circle me-2 social-link"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ieatd/"
+                            class="btn btn-light btn-square rounded-circle social-link"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-secondary">Contact Us</h3>
+                    <div class="text-light mt-4">
+                        <p class="mb-3">
+                            <i class="fas fa-map-marker-alt text-secondary me-2"></i>6th of
+                            October City (2), Giza
+                        </p>
+                        <p class="mb-3">
+                            <i class="fas fa-phone-alt text-secondary me-2"></i><a href="tel:+1234567890"
+                                class="text-light footer-link">+20 1110233325</a>
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-envelope text-secondary me-2"></i><a href="mailto:info@ieatd.com"
+                                class="text-light footer-link">info@ieatd.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="text-light mt-5 mb-4" />
+            <div class="row">
+                <!-- Copyright -->
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light">&copy; 2024 IEAtd Academy DEV, All rights reserved. &copy;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

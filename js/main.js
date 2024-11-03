@@ -1,17 +1,18 @@
 (function ($) {
     "use strict";
 
-    // Spinner Removal
-    const spinner = () => {
+    // Spinner Removal Function
+    const removeSpinner = () => {
         setTimeout(() => {
             $("#spinner").removeClass("show");
         }, 1);
     };
+    // Check if the spinner element exists and call removeSpinner
     if ($("#spinner").length > 0) {
-        spinner();
+        removeSpinner();
     }
 
-    // Initialize WOW.js for animations
+    // Initialize WOW.js for Animations
     if (typeof WOW === "function") {
         new WOW().init();
     }
@@ -21,12 +22,13 @@
         $(".back-to-top").toggle($(window).scrollTop() > 300);
     });
 
+    // Smooth Scroll to Top on Button Click
     $(".back-to-top").on("click", (e) => {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     });
 
-    // Team Carousel Initialization
+    // Team Carousel Initialization using Owl Carousel
     $(".team-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -44,7 +46,7 @@
         },
     });
 
-    // Testimonial Carousel Initialization
+    // Testimonial Carousel Initialization using Owl Carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1500,
@@ -60,16 +62,16 @@
         },
     });
 
-    // Counter Animation with Interaction
+    // Counter Animation Function
     const animateCounter = (counter) => {
-        const target = +counter.getAttribute("data-target");
-        const increment = target / 100;
+        const target = +counter.getAttribute("data-target"); // Target number to count up to
+        const increment = target / 100; // Increment value
 
         const updateCount = () => {
             const count = +counter.innerText;
             if (count < target) {
                 counter.innerText = Math.ceil(count + increment);
-                setTimeout(updateCount, 50);
+                setTimeout(updateCount, 50); // Update every 50ms
             } else {
                 counter.innerText = target;
             }
@@ -77,13 +79,14 @@
         updateCount();
     };
 
+    // Apply Counter Animation to Each Counter Element
     document.querySelectorAll(".counter-value").forEach(animateCounter);
 
-    // Interactive Elements for Contact Form Submission
+    // Contact Form Submission with AJAX
     $(".contact-form form").on("submit", function (e) {
         e.preventDefault();
         const form = $(this);
-        const formData = form.serialize();
+        const formData = form.serialize(); // Serialize form data
 
         // AJAX request to handle form submission
         $.ajax({
@@ -95,14 +98,12 @@
                 form[0].reset(); // Reset the form after successful submission
             },
             error: function () {
-                alert(
-                    "There was an error sending your message. Please try again later."
-                );
+                alert("There was an error sending your message. Please try again later.");
             },
         });
     });
 
-    // Scroll to Section Animation for Internal Links
+    // Smooth Scroll for Internal Links
     $("a[href^='#']").on("click", function (e) {
         e.preventDefault();
         const target = this.hash;
@@ -115,13 +116,55 @@
         );
     });
 
-    // Language Toggle - Simple Toggle between English and Arabic
+    // Language Toggle - Toggle between English and Arabic content
     const toggleLanguage = () => {
         $(".en").toggle(); // Show/Hide English content
         $(".ar").toggle(); // Show/Hide Arabic content
     };
 
+    // Language Toggle Button Event
     $("#language-toggle").on("click", function () {
         toggleLanguage();
     });
 })(jQuery);
+
+// Project Items Animation using Intersection Observer
+document.addEventListener("DOMContentLoaded", function() {
+    const projectItems = document.querySelectorAll(".project-item");
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2 // Trigger animation when 20% of the item is visible
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add("show");
+                }, index * 150); // Delay animation for each item for a staggered effect
+            }
+        });
+    }, observerOptions);
+
+    // Observe each project item for visibility
+    projectItems.forEach((item) => {
+        observer.observe(item);
+    });
+});
+
+const showSpinner = () => $("#spinner").addClass("show");
+const hideSpinner = () => $("#spinner").removeClass("show");
+
+$.ajax({
+    url: "data.php",
+    beforeSend: showSpinner,
+    complete: hideSpinner,
+    success: function(data) {
+        console.log("Data loaded:", data);
+    },
+    error: function() {
+        console.error("Error loading data");
+    }
+});

@@ -202,17 +202,20 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
     fetch("https://script.google.com/macros/s/AKfycbzPS9jOknEk6lEJwPfWyJAaDKeC3x4eQFlbVrp_V3rlv3yFpZyEoVctzItbczih5bEGuA/exec", {
         method: "POST",
-        mode: "no-cors",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(formData)
     })
-    .then(function() {
-        alert("Message sent successfully!");
+    .then(function(response) {
+        if (response.ok) {
+            alert("Message sent successfully!");
+        } else {
+            alert("There was an error sending your message. Please try again later.");
+        }
     })
     .catch(function(error) {
-        alert("There was an error sending the message.");
+        alert("There was an error sending your message. Please check your internet connection and try again.");
         console.error("Error:", error);
     });
 });

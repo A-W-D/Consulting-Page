@@ -189,3 +189,30 @@ document.addEventListener("DOMContentLoaded", function() {
         updateCount();
     });
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var formData = {
+        name: document.querySelector('input[name="name"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        subject: document.querySelector('input[name="subject"]').value,
+        message: document.querySelector('textarea[name="message"]').value
+    };
+
+    fetch("https://script.google.com/macros/s/AKfycbzPS9jOknEk6lEJwPfWyJAaDKeC3x4eQFlbVrp_V3rlv3yFpZyEoVctzItbczih5bEGuA/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(function() {
+        alert("Message sent successfully!");
+    })
+    .catch(function(error) {
+        alert("There was an error sending the message.");
+        console.error("Error:", error);
+    });
+});

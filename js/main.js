@@ -168,3 +168,24 @@ $.ajax({
         console.error("Error loading data");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll(".counter-value");
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const increment = target / 100; // زيادة تدريجية
+
+        const updateCount = () => {
+            const count = +counter.innerText;
+            if (count < target) {
+                counter.innerText = Math.ceil(count + increment);
+                setTimeout(updateCount, 20); // تحديث كل 20 مللي ثانية
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+});
